@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Find \nYour \nParking Space"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#4CAF50"
+            android:background="@color/teal_200"
+            android:padding="5dp"/>
+
+        <Spinner
+            android:id="@+id/location_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/yellow"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:id="@+id/entry_date_picker"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:backgroundTint="#4CAF50"
+            android:background="@color/teal_200"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:id="@+id/entry_date_view"
+            android:layout_marginLeft="10dp"
+            android:text="Entry Date\n01/01/22"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:id="@+id/entry_time_picker"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:backgroundTint="#4CAF50"
+            android:background="@color/teal_200"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:id="@+id/entry_time_view"
+            android:layout_marginLeft="10dp"
+            android:text="Entry Time\n9:00 AM"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:id="@+id/exit_date_picker"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:backgroundTint="#4CAF50"
+            android:background="@color/teal_200"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:id="@+id/exit_date_view"
+            android:layout_marginLeft="10dp"
+            android:text="Exit Date\n01/01/22"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/exit_time_picker"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:backgroundTint="#4CAF50"
+            android:background="@color/teal_200"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:id="@+id/exit_time_view"
+            android:layout_marginLeft="10dp"
+            android:text="Exit Time\n9:00 PM"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/book_parking_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#4CAF50"
+        android:textColor="@color/white"
+        android:text="Book Parking Slot"
+        android:layout_margin="20dp"/>
+
+
+</LinearLayout>

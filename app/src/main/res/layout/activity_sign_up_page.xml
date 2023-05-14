@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".SignUpPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp"
+        android:text="Sign Up"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_margin="50dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignUpUserName"
+        android:layout_below="@+id/signUp"
+        android:hint="Enter Username"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        android:padding="20sp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpEmail"
+        android:layout_below="@+id/SignUpUserName"
+        android:hint="Enter Email"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        android:padding="20sp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpPassword"
+        android:layout_below="@+id/signUpEmail"
+        android:hint="Enter Passwod"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        android:padding="20sp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUpRePassword"
+        android:layout_below="@+id/signUpPassword"
+        android:hint="ReEnter Passwod"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_margin="10sp"
+        android:padding="20sp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SignUpbtn"
+        android:layout_below="@id/signUpRePassword"
+        android:text="  SIGN UP  "
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:backgroundTint="@color/purple_700"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/SignUpbtn"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgetPassword"
+            android:text="Have an Account"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SignUpLoginText"
+            android:text="Log in"
+            android:textColor="@color/purple_700"
+            android:layout_margin="8sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
