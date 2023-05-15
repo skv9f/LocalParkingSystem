@@ -1,0 +1,20 @@
+/*
+ * The code turns OFF the LED if it is dark, otherwise turns ON the LED
+ */
+
+#define LIGHT_SENSOR_PIN  36  
+#define LED_PIN           22  
+#define ANALOG_THRESHOLD  500
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT); 
+}
+
+void loop() {
+  int analogValue = analogRead(LIGHT_SENSOR_PIN); 
+
+  if (analogValue < ANALOG_THRESHOLD)
+    digitalWrite(LED_PIN, HIGH); 
+  else
+    digitalWrite(LED_PIN, LOW);  
+}
